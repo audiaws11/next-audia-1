@@ -16,8 +16,8 @@ export default function FoodForm(props) {
    
     return (
         <div className="flex justify-center">
-        <div className=" ax-w-md mx-auto max-w-lg  shadow-lg rounded-lg border-3 border-gray-200">
-            <form onSubmit={handleCreate} className="p-8 bg-gray-100 rounded-lg shadow-lg">
+        <div className="max-w-md mx-auto max-w-lg bg-white shadow-lg rounded-lg border-2 border-gray-200">
+            <form onSubmit={handleCreate} className="p-8 bg-gray-100 rounded-lg shadow-lg bg-white">
                 <h5 className="text-xl font-bold mb-6 text-center">{title}</h5>
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-sm font-medium text-gray-600">Name:</label>
@@ -35,7 +35,7 @@ export default function FoodForm(props) {
                     <label htmlFor="ingredients" className="block text-sm font-medium text-gray-600">Ingredients</label>
                     <input defaultValue={defaultIngredients} placeholder="Ingredients" type="text" id="ingredients" name="ingredientsFood" className="mt-1 p-2 border-2 border-gray-300 rounded-md w-full focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" />
                 </div>
-                <button type="submit" disabled={loading} className={`${loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-700"} text-white font-medium py-2 px-4 rounded-lg w-full transition-colors duration-150`}>{loading ? 'Submitting...' : title}</button>
+                <button type="submit" disabled={loading} style={{background: '#CC3333'}} className={`${loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-700"} text-white font-medium py-2 px-4 rounded-lg w-full transition-colors duration-150`}>{loading ? 'Submitting...' : title}</button>
             </form>
         </div>
     </div>
