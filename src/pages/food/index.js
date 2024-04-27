@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Layout from "@/layout/Layout";
 import Link from 'next/link';
+import AddToCartButton from "@/component/Button/AddToCart";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,7 +59,7 @@ export default function Home() {
             <div className="p-4">
               <h2 className="text-xl font-bold mb-2">{item.name}</h2>
               <div className="mt-4 flex justify-between items-center">
-                <button onClick={handleAlert} className="px-2 py-2 text-white hover:bg-blue-200 rounded-lg" style={{background: '#CC3333'}}>Add to Cart</button>
+              <AddToCartButton onClick={handleAlert} />
                 <Link href={`/food/${item.id}`} ><button onClick={() => handleViewDetails(item.id)} className="px-2 py-2 bg-gray-500 text-white hover:bg-gray-200 rounded-lg">View Details</button></Link>
               </div>
             </div>

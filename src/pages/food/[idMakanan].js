@@ -4,6 +4,8 @@ import usePost from "@/hooks/usePost";
 import { useState } from "react";
 import Layout from "@/layout/Layout";
 import { useRouter } from 'next/router';
+import DeleteButton from "@/component/Button/DeleteButton";
+import ModalToggleButton from "@/component/Button/ModalToggleButon";
 
 export async function getServerSideProps(context) {
   
@@ -65,14 +67,10 @@ export default function FoodDetailPage({ food }) {
         <p className="text-lg font-semibold">Description: {food?.description}</p>
         <p className="text-lg font-semibold">Ingredients: {ingredientsDisplay}</p>
         <div className="flex justify-content-center ">
-        <button onClick={() => setIsModalOpen(true)} className="bg-gray-500 hover:bg-gray-200 text-white font-bold py-2 px-2 rounded-lg pl-3">
-          Update {food?.name}
-        </button>
+        <ModalToggleButton isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} foodName={food?.name} />
 
-        <button onClick={handleDelete} className="bg-red-700 hover:bg-red-500 text-white font-bold py-2 px-2 rounded-lg">
-          Delete {food?.name}
-        </button>
-        
+
+        <DeleteButton className="bg-red-700 hover:bg-red-500 text-white font-bold py-2 px-2 rounded-lg" onClick={handleDelete} foodName={food?.name} disabled={loading} />
 
         {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-filter backdrop-blur-sm flex justify-center items-center">
@@ -85,9 +83,7 @@ export default function FoodDetailPage({ food }) {
                 defaultIngredients={ingredientsDisplay}
                 onSubmitFood={handleUpdate} 
               />
-              <button onClick={() => setIsModalOpen(false)} className="mt-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg">
-                Close
-              </button>
+             <ModalToggleButton isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} foodName={food?.name} />
             </div>
           </div>
         )}

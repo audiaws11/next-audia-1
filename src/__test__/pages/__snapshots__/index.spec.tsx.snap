@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders the home page 1`] = `
+<div>
+  <div>
+    <div
+      class="bg-slate-200 text-black min-h-screen"
+    >
+      <nav
+        class="text-white p-4"
+        style="background: rgb(204, 51, 51);"
+      >
+        <div
+          class="container mx-auto flex justify-between items-center"
+        >
+          <div
+            class="text-lg font-bold"
+          >
+            <a
+              class="text-white hover:text-gray-300"
+              href="/"
+              style="text-decoration: none;"
+            >
+              Madang Resto by Dibimibing
+            </a>
+          </div>
+          <div
+            class="flex gap-4"
+          >
+            <a
+              class="text-white hover:text-gray-300"
+              href="/create"
+              style="text-decoration: none;"
+            >
+              Add Menu
+            </a>
+            <a
+              class="text-white hover:text-gray-300"
+              href="/food"
+              style="text-decoration: none;"
+            >
+              Menu
+            </a>
+          </div>
+        </div>
+      </nav>
+      <article
+        class="article1"
+        style="background: rgb(255, 248, 238); height: 500px;"
+      >
+        <div
+          class="row container p-5"
+        >
+          <div
+            class="col-6 ms-5 mt-2"
+          >
+            <h2
+              class="trade font-bold mt-20"
+              data-aos="fade-up"
+              style="color: rgb(204, 51, 51); padding: 8px 30px; font-size: 50px;"
+            >
+              Madang Resto
+            </h2>
+            <p
+              class="trademark font-semibold pl-8"
+            >
+              Whenever hungry choose 
+              <span
+                style="color: rgb(204, 51, 51); font-size: 25px;"
+              >
+                <b>
+                  Madang
+                </b>
+              </span>
+            </p>
+            <p
+              class="font-semibold pl-8 pt-3"
+            >
+              <a
+                href="/food"
+              >
+                <button
+                  class="rounded-lg"
+                  style="background: rgb(204, 51, 51); color: aliceblue; padding: 8px 30px; font-size: 12px;"
+                >
+                  <b>
+                    Discover Menu
+                  </b>
+                </button>
+              </a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <footer
+        class="footer pb-5 pt-3"
+        style="background: black; color: aliceblue;"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-6"
+            >
+              <div>
+                <p>
+                  Open Hours
+                </p>
+                <ul
+                  style="list-style-type: none;"
+                >
+                  <li>
+                    Monday - Friday: 09.00 - 20.00
+                  </li>
+                  <li>
+                    Saturday: 09.00 - 21.00
+                  </li>
+                  <li>
+                    Sunday and Holiday: 10.00 - 21.00
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-md-6"
+            >
+              <p>
+                Locations
+              </p>
+              <ul
+                style="list-style-type: none;"
+              >
+                <li>
+                  Grand Indonesia, Jakarta
+                </li>
+                <li>
+                  Tunjungan Plaza, Surabaya
+                </li>
+                <li>
+                  DP Mall, Semarang
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="container mt-3"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col text-start"
+            >
+              All rights Reserved © Audia Winniar Savitri 2024
+            </div>
+            <div
+              class="col text-end"
+            >
+              Made with ❤️ for Dibimbing Next Assignment
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+`;
